@@ -3,13 +3,13 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    string test_str("stressed");
-    for (int i = test_str.size() -1 ; i >= 0; i--)
-        cout << test_str[i];
-    //for (int i = 0; i < 10; ++i)
-    //    cout << test_str[i];
-    //cout << test_str[7];
+void str_reverse(string input_str){
+    for (int i = input_str.size() -1 ; i >= 0; i--)
+        cout << input_str[i];
     cout << endl;
+}
+
+int main(){
+    string test_str("stressed");
+    str_reverse(test_str);
 }
